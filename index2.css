@@ -94,7 +94,7 @@ header, footer, #menu-line {
 .icon-data {
     width: 2rem;
     height:2rem;
-    margin-right: 1em;
+    margin-right: 1rem;
     z-index: 150;
     cursor: pointer;
     background: transparent;
@@ -262,9 +262,10 @@ h5, .bolder {
     width: 25%;
     font-size: 1rem;
     font-weight: bold;
+    padding-right: 1%;
 }
 .colum2 {
-    width: 75%;
+    width: 74%;
 }
 
 
@@ -305,6 +306,9 @@ h5, .bolder {
 
 
 @media (max-width:1280px) {
+    .container {
+        width: 100%;
+    }
     .toggle-menu, #menu-line {
         display: block;
     }
@@ -315,9 +319,10 @@ h5, .bolder {
         display: flex;
         justify-content: space-between;
         padding: 0;
+        padding-right: 1rem;
     }
     .icon-data {
-        margin: 0 .5em;
+        margin: 0 .5em 0 0;
     }
     header {
         border-bottom: 0.5px solid rgba(255,255,255, .3);
@@ -342,9 +347,14 @@ h5, .bolder {
         flex-direction: column;
         padding-top: 6rem;
     }
+    #page1 {
+        padding-top: 7rem;
+    }
     .text1, .text2, .text3, .text4, .text5, .text6, .text7 {
-        width: 90%;
-
+        width: 100%;
+        min-width: 100%;
+        align-items: center;
+        justify-content: space-around;
     }
     h2 {
         align-self: center;
@@ -355,4 +365,21 @@ h5, .bolder {
     #col1, #col2 {
         width: 100%;
     }
+    .image2, .image3, .image4, .image5 {
+        width: 25%;
+        min-width: 350px;
+    }
+    .colum1 {
+        font-size: .8rem;
+    }
+    #botones, #menu-line {
+        box-shadow: 0 0 15px rgba(0, 0, 0, .99);
+    }
+    
+}
+@media (max-width:500px) {
+    #page1 {
+        padding-top: 10rem;
+    }
+   
 }

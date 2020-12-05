@@ -78,7 +78,7 @@ a {
 }
 #image {
     width: 30%;
-    min-width: 400px;
+    min-width: 360px;
     border: white solid 3px;
     box-shadow: rgba(0, 0, 0, .5) 10px 20px 20px;
 }
