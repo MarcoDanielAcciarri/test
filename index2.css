@@ -17,6 +17,9 @@ a {
 .mostrar {
     display: block;
 }
+h4 {
+    color: turquoise;
+}
 
 /* index */
 .container-idx {
@@ -72,10 +75,7 @@ header, footer, #menu-line {
     flex-wrap: wrap;
 }
 .toggle-menu {
-    width: 2rem;
-    height:2rem;
-    border-radius: 50%;
-    margin-left: 1em;
+    margin-left: 1rem;
     cursor: pointer;
     align-self: flex-start;
 }
@@ -92,15 +92,28 @@ header, footer, #menu-line {
     z-index: 150;
 }
 .icon-data {
-    width: 2rem;
-    height:2rem;
-    margin-right: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     z-index: 150;
     cursor: pointer;
-    background: transparent;
+    font-size: x-large;
+    color:  rgba(255, 255, 255, .8);
+    display: block;
 }
-img {
-    background: transparent;
+
+.icon-data:hover {
+    background: rgba(255, 255, 255, .2);
+    border: rgba(255, 255, 255, .8) solid 1px;
+    border-radius: 3px;
+}
+
+.icon-data a:visited {
+    color: white;
+}
+#icons {
+    display: flex;
+    flex-direction: row;
 }
 #small-menu {
     display: none;
@@ -150,14 +163,17 @@ nav ul li a:hover{
 .video {
     border: white solid 3px;
     box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;
+    margin: 2rem 0;
 }
 .image1 {
+    margin: 2rem 0;
     width: 20%;
     min-width: 300px;
 }
 .image2 {
     width: 25%;
     min-width: 400px;
+    margin: 0 0 2rem 0;
 }
 .image3 {
     width: 25%;
@@ -170,6 +186,7 @@ nav ul li a:hover{
 .image5 {
     width: 25%;
     min-width: 400px;
+    margin: 0 0 2rem 0;
 }
 
 .text1 {
@@ -280,7 +297,6 @@ h5, .bolder {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
 }
 #page1 {
     background: rgb(192, 192, 192) ;
@@ -321,8 +337,11 @@ h5, .bolder {
         padding: 0;
         padding-right: 1rem;
     }
+    #icons {
+        display: flex;
+    }
     .icon-data {
-        margin: 0 .5em 0 0;
+        margin: 0;
     }
     header {
         border-bottom: 0.5px solid rgba(255,255,255, .3);
@@ -346,6 +365,7 @@ h5, .bolder {
     #page1, #page2, #page3, #page4, #page5, #page6, #page7 {
         flex-direction: column;
         padding-top: 6rem;
+        padding-left: 2rem 0 2rem;
     }
     #page1 {
         padding-top: 7rem;
@@ -354,7 +374,7 @@ h5, .bolder {
         width: 100%;
         min-width: 100%;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
     }
     h2 {
         align-self: center;
@@ -367,7 +387,10 @@ h5, .bolder {
     }
     .image2, .image3, .image4, .image5 {
         width: 25%;
-        min-width: 350px;
+        min-width: 300px;
+    }
+    .video {
+        min-width: 320px;
     }
     .colum1 {
         font-size: .8rem;
@@ -381,5 +404,7 @@ h5, .bolder {
     #page1 {
         padding-top: 10rem;
     }
-   
+    .image2, .image5 {
+        margin: 2rem 0;
+    }
 }
