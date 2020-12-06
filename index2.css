@@ -217,7 +217,7 @@ nav ul li a:hover{
     float: left;
     width: 60%;
     color: rgb(14, 34, 61);
-    /*text-align: justify;*/
+    margin-bottom: 2rem;
 }
 .text5 {
     float: left;
