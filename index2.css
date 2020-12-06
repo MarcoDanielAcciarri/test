@@ -365,7 +365,7 @@ h5, .bolder {
     #page1, #page2, #page3, #page4, #page5, #page6, #page7 {
         flex-direction: column;
         padding-top: 6rem;
-        padding-left: 2rem 0 2rem;
+        padding-bottom: 2rem;
     }
     #page1 {
         padding-top: 7rem;
@@ -390,7 +390,7 @@ h5, .bolder {
         min-width: 300px;
     }
     .video {
-        min-width: 320px;
+        min-width: 300px;
     }
     .colum1 {
         font-size: .8rem;
