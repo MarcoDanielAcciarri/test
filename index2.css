@@ -161,6 +161,8 @@ nav ul li a:hover{
     box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;
 }
 .video {
+    width: 360px;
+    height: 315px;
     border: white solid 3px;
     box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;
     margin: 2rem 0;
@@ -390,7 +392,7 @@ h5, .bolder {
         min-width: 300px;
     }
     .video {
-        min-width: 300px;
+        width: 300px;
     }
     .colum1 {
         font-size: .8rem;
@@ -403,6 +405,10 @@ h5, .bolder {
 @media (max-width:500px) {
     #page1 {
         padding-top: 10rem;
+    }
+    #page6, .text6 {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .image2, .image5 {
         margin: 2rem 0;
